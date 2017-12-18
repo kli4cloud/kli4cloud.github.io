@@ -1,0 +1,20 @@
+.error-container {
+  margin: 10px auto;
+}
+
+.error-code {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 4em;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.error-title{
+  text-align: center;
+  font-weight: bold;
+}
+
+.error-message{
+  text-align: center;
+}
