@@ -1,0 +1,20 @@
+header {
+  height: 80px;
+  background: #202b3f;
+  display: flex;
+}
+
+.logo {
+  position: absolute;
+  width: 84px;
+  height: 42px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.logo-text {
+  margin-left: 84px;
+  color: white;
+  font-family: Raleway;
+  font-weight: 100;
+}

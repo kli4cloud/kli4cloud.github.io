@@ -1,0 +1,19 @@
+---
+layout: default
+title: Blog kli4cloud
+---
+<div class="list-post-header">
+  <h2>Inside kli4cloud</h2>
+</div>
+<div class="blog-posts">
+  {% for post in site.posts %}
+  <div class="list-post-box {{ post.category }}">
+    <a class="list-post-url" href="{{ post.url }}">
+      <div class="list-post-date">{{ post.date | date: '%d %B, %Y' }}</div>
+        {% assign image = post.images[0] %}
+        {% include image.html image=image %}
+      <div class="list-post-title">{{ post.title }}</div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
