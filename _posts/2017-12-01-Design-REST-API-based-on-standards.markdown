@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Designing a REST API based on standards"
+author: "jose"
 date:   2017-12-01 19:25:33 +0000
 category: REST
 images:
