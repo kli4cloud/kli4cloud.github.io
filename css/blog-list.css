@@ -8,6 +8,7 @@
 }
 
 .blog-posts {
+  display: flex;
 }
 
 .list-post-box{
@@ -37,7 +38,7 @@
     width: 230px;
     height: 230px;
     margin-top: 5px;
-    margin-left: 37px;
+    margin-left: 50px;
 }
 
 .list-post-title {

@@ -302,16 +302,6 @@ PUT and PATCH methods allow updates of existing resources. There are a few diffe
 * PUT replaces the resource with the new representation, PATCH makes a partial update of the resource, updating only a few resource's fields
 * PUT is idempotent and PATCH not
 
-## Idempotent
-
-A HTTP method is considered "idempotent" if the intended effect on the server of multiple identical requests with that method is the same as the effect for a single such request. GET, HEAD, OPTIONS, PUT and DELETE methods are idempotent.
-
-Idempotent methods are important because that means the request can be repeated automatically if a communication failure occurs before the client is able to read the server's response.  For example, if a client sends a PUT request and the underlying connection is closed before any response is received, then the client can establish a new connection and retry the idempotent request.
-
-To be idempotent, only the actual back-end state of the server is considered, the HTTP status code returned by each request may differ:
-
-**i.e.** First call of a DELETE will likely return a 200, while successive ones will likely return a 410.
-
 ##  References
 
 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP" target="_blank">Mozilla doc</a>
