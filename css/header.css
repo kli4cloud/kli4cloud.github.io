@@ -1,14 +1,20 @@
 header {
-  height: 80px;
+  height: 70px;
   background: #202b3f;
-  display: flex;
+  width: 100%;
+}
+
+.page-header {
+  width: 1024px;
+  margin: auto;
+  height: 70px;
 }
 
 .logo {
   position: absolute;
   width: 84px;
   height: 42px;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-left: 15px;
 }
 

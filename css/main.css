@@ -4,6 +4,10 @@
 
 @import "generic.css";
 @import "header.css";
+@import "body.css";
 @import "footer.css";
 @import "blog-list.css";
 @import "error.css";
+@import "post.css";
+@import "post-table.css";
+@import "post-code.css";

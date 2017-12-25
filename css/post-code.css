@@ -1,0 +1,9 @@
+pre.highlight {
+  background: #f7f7f8;
+  padding: 0.5em;
+}
+
+div.highlighter-rouge {
+  background: white;
+  padding: 0.2em;
+}

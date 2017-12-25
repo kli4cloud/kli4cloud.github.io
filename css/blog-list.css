@@ -1,10 +1,13 @@
-
 .list-post-header {
   color: #484f58;
-  font-size: 2em;
+  font-size: 3.1em;
+  padding-top: 10px;
   text-align: center;
   font-weight: normal;
   font-family: Raleway;
+}
+
+.blog-posts {
 }
 
 .list-post-box{
@@ -13,6 +16,7 @@
   background: #F3F4F5;
   margin: 15px;
   border-radius: 10px;
+  display: inline-block;
 }
 
 .list-post-date {
