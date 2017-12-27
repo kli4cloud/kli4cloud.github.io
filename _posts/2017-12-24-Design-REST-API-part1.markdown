@@ -136,7 +136,7 @@ POST method should return the entity created in the response body and a Location
 
 ##### Request
 ```
-  POST /users
+  POST /users HTTP/1.1
   Accept: application/json
   Content-Type: application/json
   { name: 'John', surname: 'Snow'}
@@ -169,13 +169,13 @@ PUT method should return the entity updated in the response body. It can be impl
 
 ##### Request
 ```
-  PUT /users/1234
+  PUT /users/1234 HTTP/1.1
   Content-Type: application/json
   { name: 'John', surname: 'Snow'}
 ```
 ##### Response
 ```
-  Status: 200
+  Status: 200 OK
   Content-Type: application/json
   { id: '1', name: 'John', surname: 'Snow'}
 ```
@@ -251,11 +251,11 @@ DELETE method removes a specific resource. The URL specifies the type of the res
 #### Example
 ##### Request
 ```
-  DELETE /users/123456
+  DELETE /users/123456 HTTP/1.1
 ```
 ##### Response
 ```
-  Status: 204
+  Status: 204 No Content
 ```  
 
 ##  POST vs PUT methods
@@ -267,13 +267,13 @@ POST method is cacheable and not idempotent whereas that the PUT method is not c
 #### POST example
 ##### Request
 ```
-  POST /users
+  POST /users HTTP/1.1
   Content-Type: application/json
   { name: 'John', surname: 'Snow'}
 ```
 ##### Response
 ```
-  Status: 201
+  Status: 201 Created
   Content-Type: application/json
   Location: /users/1
   { id: '1', name: 'John', surname: 'Snow'}
@@ -283,13 +283,13 @@ POST method is cacheable and not idempotent whereas that the PUT method is not c
 
 ##### Request
 ```
-  PUT /users/1
+  PUT /users/1 HTTP/1.1
   Content-Type: application/json
   { name: 'John', surname: 'Snow'}
 ```
 ##### Response
 ```
-  Status: 201
+  Status: 201 Created
   Content-Type: application/json
   { id: '1', name: 'John', surname: 'Snow'}
 ```

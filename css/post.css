@@ -9,7 +9,7 @@
 
 .blog-post-content {
   background-color: white;
-  padding-top: 1.5rem;
+  padding-top: 0.5rem;
   padding-left: 0.5em;
   padding-right: 0.5em;
   padding-bottom: 0.5em;
@@ -30,6 +30,8 @@ h2 {
   word-spacing: -.05em;
   font-size: 2em;
   border-bottom: 2px solid #1abc9c;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 h3 {
@@ -38,6 +40,8 @@ h3 {
   word-spacing: -.05em;
   font-size: 1.6em;
   border-bottom: 1px solid #EEE;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
 }
 
 h4 {
@@ -45,12 +49,13 @@ h4 {
   letter-spacing: -.01em;
   word-spacing: -.05em;
   font-size: 1.2em;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
 }
 
 h5 {
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: bold;
   letter-spacing: -.01em;
   word-spacing: -.05em;
