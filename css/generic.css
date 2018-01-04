@@ -13,3 +13,18 @@ h1 {
   font-weight: 100;
   font-size: 2.3em;
 }
+
+input:not([type=submit]):not([type=file]), textarea {
+  width: 100%;
+  border: 2px solid #ebebeb;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 0px 2px transparent;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  margin-top: 0.6em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  padding-left: 0.6em;
+}
