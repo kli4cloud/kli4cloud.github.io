@@ -1,29 +1,30 @@
-<div class="send-comment-title">Leave a Comment</div>
-<form id="comment-form" class="send-comment-form" method="post" action="https://api.staticman.net/v2/entry/kli4cloud/kli4cloud.github.io/master/comments">
+<div class="comment-title">Leave a Comment</div>
+<form id="comment-form" class="send-comment-form" method="post" action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}/comments">
   <div class="form-group">
     <label for="comment-form-message">
         <strong>Comment</strong><small> (<a href="https://kramdown.gettalong.org/quickref.html">Markdown</a> is allowed)</small>
       </label>
-    <textarea type="text" rows="6" id="comment-form-message" name="fields[message]" required="" spellcheck="true"></textarea>
+    <textarea type="text" rows="6" id="comment-form-message" name="fields[message]" required spellcheck="true"></textarea>
   </div>
   <div class="form-group">
     <label for="comment-form-name"><strong>Name</strong></label>
-    <input type="text" id="comment-form-name" name="fields[name]" required="" spellcheck="false">
+    <input type="text" id="comment-form-name" name="fields[name]" required spellcheck="false">
   </div>
   <div class="form-group">
     <label for="comment-form-email">
         <strong>Email</strong>
         <small> (used for <a href="http://gravatar.com" target="_blank">Gravatar</a> image and reply notifications)</small>
-      </label><input type="email" id="comment-form-email" name="fields[email]" required="" spellcheck="false"></div>
+      </label><input type="email" id="comment-form-email" name="fields[email]" required spellcheck="false"></div>
   <div class="form-group">
     <label for="comment-form-url"><strong>Website</strong> <small>(optional)</small></label>
-    <input type="url" id="comment-form-url" name="fields[url]">
+    <input type="url" id="comment-form-url" name="fields[url]" spellcheck="false">
   </div>
   <div class="form-group" style="display:none">
-    <input type="hidden" name="options[origin]" value="/articles/using-jekyll-2017/">
-    <input type="hidden" name="options[parent]" value="/articles/using-jekyll-2017/">
+    <input type="hidden" name="options[redirect]" value="{{ site.url }}{{ page.url }}">
+    <input type="hidden" name="options[origin]" value="{{ page.url }}">
+    <input type="hidden" name="options[parent]" value="{{ page.url }}">
     <input type="hidden" id="comment-replying-to" name="fields[replying_to]" value="">
-    <input type="hidden" id="comment-post-id" name="options[slug]" value="using-jekyll-2017">
+    <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
   </div>
   <p class="hidden js-notice"><span class="js-notice-text"></span></p>
   <div class="form-group">

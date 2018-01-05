@@ -14,19 +14,40 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Kli4cloud
-email: helo@kli4cloud.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Kli4cloud LTD.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://blog.kli4cloud.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: kli4cloud
-github_username:  kli4cloud
+email: hello@kli4cloud.com
+description: Kli4cloud Website
+locale: "en_US"
+repository: "kli4cloud/kli4cloud.github.io"
+url: "http://blog.kli4cloud.com"
 
-authors:
-  jose:
-    display_name: Jose Morales
-    gravatar: b88b443c231c48a5287825d1a0ca2e7a
-    email: jose@kli4cloud.com
+social:
+  name: "Kli4cloud"
+  links:
+    - "https://twitter.com/kli4cloud"
+    - "https://github.com/kli4cloud"
+    - "https://www.linkedin.com/company/18332746"
+
+feed:
+  path: "http://blog.kli4cloud.com/atom.xml"
+
+author:
+  name: Jose Morales
+  gravatar: b88b443c231c48a5287825d1a0ca2e7a
+  email: jose@kli4cloud.com
+  uri: &uri "https://www.kli4cloud.com/"
+  url: *uri
+  bio: "Developer, Architect and Entrepreneur"
+  picture: "/images/jose-morales.jpg"
+  twitter: "https://twitter.com/kli4cloud"
+  github: "https://github.com/kli4cloud"
+  linkedin: "https://www.linkedin.com/in/josemoralesmartinez/"
+
+twitter:
+  username: "kli4cloud"
+github:
+  username: "kli4cloud"
+staticman:
+  branch: "master"
 
 # Build settings
 markdown: kramdown
