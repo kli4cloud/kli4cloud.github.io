@@ -1,19 +1,90 @@
 ---
 layout: default
-title: Blog kli4cloud
+title: Kli4cloud
 ---
-<div class="list-post-header">
-  <span>Inside kli4cloud</span>
-</div>
-<div class="blog-posts">
-  {% for post in site.posts %}
-  <div class="list-post-box {{ post.category }}">
-    <a class="list-post-url" href="{{ post.url }}">
-      <div class="list-post-date">{{ post.date | date: '%d %B, %Y' }}</div>
-        {% assign image = post.images[0] %}
-        {% include image.html image=image %}
-      <div class="list-post-title">{{ post.title }}</div>
-    </a>
+<div class="site-content">
+  <div id="home">
+    <div class="responsive-width">
+      <div class="home-header">Code -&gt; Test -&gt; Deploy -&gt; Enjoy</div>
+      <div class="home-description">Offering our experience with μServices, AWS, CI/CD, TDD, CDC</div>
+    </div>
   </div>
-  {% endfor %}
+  <div id="services" class="home-section">
+    <div class="responsive-width">
+      <div class="section-header">OUR SERVICES</div>
+      <div class="horizontal-container">
+        <div id="aws-service" class="service">
+          <div class="service-icon">
+            <i class="circle-icon fa fa-amazon fa-2x"></i>
+          </div>
+          <div class="service-content">
+            <div class="service-content-header">Infrastructure</div>
+            <div class="service-content-description">AWS infrastructure driven by Terraform.</div>
+          </div>
+        </div>
+        <div id="ci-service" class="service">
+          <div class="service-icon">
+            <i class="circle-icon fa fa-refresh fa-2x"></i>
+          </div>
+          <div class="service-content">
+            <div class="service-content-header">CI/CD</div>
+            <div class="service-content-description">Tailored and secure pipeline with the best technologies</div>
+          </div>
+        </div>
+        <div id="development-service" class="service">
+          <div class="service-icon">
+            <i class="circle-icon fa fa-file-code-o fa-2x"></i>
+          </div>
+          <div class="service-content">
+            <div class="service-content-header">Development</div>
+            <div class="service-content-description">Cutting edge technologies with best methodologies</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contact" class="home-section">
+    <div class="responsive-width">
+      <div class="section-header">CONTACT</div>
+      <div class="horizontal-container">
+        <div class="contact-container">
+          <div class="address-header">Talk to us</div>
+          <div class="address-content">
+            <address>
+            <div class="location contact-details">
+              <i class="fa fa-map-marker fa-2x contact-icon"></i><span>Address</span>
+              <div>Saffron Square, Croydon, London, CR0 2FT</div>
+            </div>
+            <div class="phone contact-details">
+              <i class="fa fa-phone fa-2x contact-icon"></i><span>Phone</span>
+              <div>+44 739 888 90 95</div>
+            </div>
+        </address>
+          </div>
+        </div>
+        <div class="contact-container">
+          <form class="form" id="contact-form" name="form1" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://kli4cloud.wufoo.com/forms/z1vhp06e0yiekue/#public">
+            <div class="form-group">
+              <label id="title1" for="Field1"><strong>Message</strong><span id="req_1" class="req">*</span></label>
+              <textarea id="Field1" name="Field1" spellcheck="true" rows="10" cols="50" tabindex="1" required></textarea>
+            </div>
+            <div class="form-group">
+              <label id="title6" for="Field6"><strong>Name</strong><span id="req_3" class="req">*</span></label>
+              <input id="Field6" name="Field6" type="text" maxlength="255">
+            </div>
+            <div class="form-group">
+              <label id="title3" for="Field3"><strong>Email address</strong><span id="req_2" class="req">*</span> <small>(will remain private)</small></label>
+              <input id="Field3" name="Field3" type="email" spellcheck="false" maxlength="255" required>
+            </div>
+            <div class="form-group">
+              <button id="saveForm" name="saveForm" class="btn submit" type="submit">Send Message</button>
+            </div>
+            <div class="form-group hidden">
+              <input type="hidden" id="idstamp" name="idstamp" value="fztgICMZ2rdZpLn0ryChFzUDPFfMKcvi5AHMlP6VLA8=">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

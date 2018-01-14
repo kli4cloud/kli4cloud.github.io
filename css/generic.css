@@ -4,6 +4,12 @@ a:hover, a:active, a:-webkit-any-link{
   color: black;
 }
 
+a:hover {
+  text-decoration:  none;
+  font-weight:      100;
+  color: #1abc9c;
+}
+
 body {
   margin: 0px;
   background-color: #f0f0f0;
@@ -28,4 +34,9 @@ input:not([type=submit]):not([type=file]), textarea {
   padding-top: 0.6em;
   padding-bottom: 0.6em;
   padding-left: 0.6em;
+}
+
+.responsive-width {
+  width: 1074px;
+  margin: auto;
 }

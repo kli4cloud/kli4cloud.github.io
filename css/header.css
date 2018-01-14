@@ -24,3 +24,41 @@ header {
   font-family: Raleway;
   font-weight: 100;
 }
+
+.navigation {
+  position: relative;
+  float: right;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.navigation ul {
+  list-style: none;
+}
+
+.navigation ul li {
+  position: relative;
+  display: inline;
+  float: left;
+}
+
+.navigation ul li a {
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.navigation ul li a:active {
+  color: white;
+}
+
+.navigation ul li a:visited {
+  color: white;
+}
+
+.navigation ul li a:link {
+  color: white;
+}
+
+.navigation ul li a:hover {
+  color: #1abc9c;
+}

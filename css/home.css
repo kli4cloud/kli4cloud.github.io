@@ -1,0 +1,108 @@
+
+
+#home {
+  height: 500px;
+  background: #202b3f;
+  color: white;
+  text-align: center;
+}
+
+.home-header {
+  font-size: 3em;
+  padding-top: 150px;
+}
+
+.home-description {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home-section {
+  width: 100%;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.section-header{
+  font-size: 2.6em;
+  font-weight: bold;
+  text-align: center;
+  color: #484f58;
+  margin-bottom: 1.5em;
+}
+
+.service {
+  text-align: center;
+  width: 33.33%;
+}
+
+.service-icon {
+  margin-bottom: 2.5em;
+}
+
+.service-content-header {
+  text-align: center;
+  color: #484f58;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.service-content-description {
+  text-align: center;
+  color: #777777;
+}
+
+#contact {
+  background-color: white;
+}
+
+.contact-container {
+  width: 50%;
+}
+
+.contact-icon {
+  color: #1abc9c;
+  padding-right: 0.4em;
+  padding-bottom: 0.5em;
+
+}
+
+.address-header {
+  color: #484f58;
+  font-size: 2em;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+}
+
+address span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.contact-details {
+  padding-left: 2em;
+  padding-bottom: 1em;
+}
+
+.horizontal-container {
+  display: flex;
+}
+
+.circle-icon {
+  display: inline-block;
+  font-size: 2em;
+  padding: 1.1em 1.15em;
+  color: #484f58;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: transparent;
+  -webkit-box-shadow: 0 0 0 2px #484f58;
+  -moz-box-shadow: 0 0 0 2px #484f58;
+  box-shadow: 0 0 0 2px #484f58;
+  -webkit-transition: all .15s linear;
+  -moz-transition: all .15s linear;
+  -o-transition: all .15s linear;
+  transition: all .15s linear;
+}
